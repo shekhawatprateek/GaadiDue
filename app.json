@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Parivahan",
-    "slug": "Parivahan",
+    "name": "GaadiDue",
+    "slug": "gaadidue",
+    "scheme": "parivahan-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,10 +17,19 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.Parivahan"
+    },
+    "experiments": {
+      "typedRoutes": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-notifications"
+    ]
   }
 }
